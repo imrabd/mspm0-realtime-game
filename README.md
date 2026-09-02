@@ -56,7 +56,6 @@ itself is `main`.
 
 ## Attribution
 
-The game design, engine architecture, interrupt structure, audio driver,
-sprite art, and sound assets here are my own work. The underlying peripheral
-drivers and project scaffolding are by Jonathan Valvano and are not included
-in this repository.
+The game design, interrupt structure, audio driver, sprite art and sound
+assets here are my own work. The underlying peripheral drivers and project
+scaffolding are by Jonathan Valvano and are not included in this repository.

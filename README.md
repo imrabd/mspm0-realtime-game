@@ -1,4 +1,4 @@
-# MSPM0 Real-Time Game Engine
+# Real-Time Embedded Game on MSPM0G3507
 
 A complete real-time game running bare-metal on an MSPM0G3507 (ARM Cortex-M0+,
 80 MHz) with no RTOS. Two independent real-time loops share one core: game
@@ -33,7 +33,7 @@ extended character set for accented glyphs.
 
 | Path | Contents |
 |---|---|
-| `game_engine_main.c` | Game state machine, physics, rendering, interrupt handlers |
+| `game_main.c` | Game state machine, physics, rendering, interrupt handlers |
 | `Sound.c` / `Sound.h` | DAC audio driver, SysTick sample streaming |
 | `Switch.c` | Debounced switch input |
 | `sprites/SUISprites.h` | Sprite and background art, RGB565 |
@@ -50,7 +50,7 @@ Supply them from an MSPM0 ValvanoWare distribution, along with the CCS project
 files and the MSPM0G3507 linker command file, then drop these sources in
 alongside.
 
-Note that `game_engine_main.c` retains several standalone demo entry points
+Note that `game_main.c` retains several standalone demo entry points
 (`main0` through `main4`) from the original project scaffolding; the game
 itself is `main`.
 
